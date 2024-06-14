@@ -1,0 +1,144 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+.left {
+  flex: 1;
+  background-color: #f0f0f0;
+}
+
+.left img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.upload-section {
+  text-align: center;
+}
+
+.upload-section h2 {
+  margin-bottom: 20px;
+}
+
+.upload-section form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.upload-section input[type="file"] {
+  margin-bottom: 20px;
+}
+
+.upload-section input[type="submit"] {
+  padding: 10px 20px;
+  border: none;
+  background-color: #007BFF;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.upload-section input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+.footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #fff;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.footer .powered-by {
+  margin: 0;
+}
+
+.footer .title {
+  margin: 0;
+  text-align: center;
+  flex: 1;
+}
+.containercode {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+.centercode {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.text-block textarea {
+  width: 100%;
+  max-width: 600px;
+  height: 200px;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  resize: none;
+  font-family: monospace;
+  background-color: #f7f7f7;
+}
+
+.text-block button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #007BFF;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.text-block button:hover {
+  background-color: #0056b3;
+}
+.footer .about-me {
+  padding: 5px 10px;
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 0;
+  text-align: center;
+
+}
+
+.footer .about-me:hover {
+  background-color: #0056b3;
+}

@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OCR Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  </head>
+  <body>
+    <div class="containercode">
+      <div class="centercode">
+        <h1>Extracted Text</h1>
+        <div class="text-block">
+          <textarea id="extractedText" readonly>{{ text }}</textarea>
+          <button onclick="copyText()">Copy Text</button>
+        </div>
+        <a href="{{ url_for('index') }}">Upload another image</a>
+      </div>
+      <div class="footer">
+        <p>Powered by Soheil Naderi</p>
+        <a href="http://naderiofficial.com" target="_blank" class="about-me-link">
+          <button class="about-me">About Me</button>
+        </a>
+      </div>
+    </div>
+    <script>
+      function copyText() {
+        var textArea = document.getElementById('extractedText');
+        textArea.select();
+        document.execCommand('copy');
+      }
+    </script>
+  </body>
+</html>
